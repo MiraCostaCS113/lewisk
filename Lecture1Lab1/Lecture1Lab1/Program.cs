@@ -11,6 +11,7 @@ namespace Lecture1Lab1
         static void Main(string[] args)
         {
             Console.WriteLine("Hello CS155.");
+            Console.WriteLine("Commit and PUSH");
 
             Console.ReadLine();
         }
