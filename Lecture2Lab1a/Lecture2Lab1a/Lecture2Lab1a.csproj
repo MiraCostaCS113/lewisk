@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{92D6B865-347C-4D6E-A532-8BA33979EB0C}</ProjectGuid>
+    <ProjectGuid>{47D6D60D-22FC-4A43-A9A7-41DD7C660173}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Lecture1Lab1</RootNamespace>
-    <AssemblyName>Lecture1Lab1</AssemblyName>
+    <RootNamespace>Lecture2Lab1a</RootNamespace>
+    <AssemblyName>Lecture2Lab1a</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -47,9 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="screenshots\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

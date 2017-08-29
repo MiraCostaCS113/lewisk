@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lecture1Lab1
+namespace Lecture2Lab1a
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //   print a  message to   the screen
             Console.WriteLine("Hello out there.");
             Console.WriteLine("I will add two numbers for you.");
             Console.WriteLine("Enter one number and press enter, thenenter second number and press enter:");
@@ -20,12 +19,12 @@ namespace Lecture1Lab1
             int product;
             int division;
             string userInput;
-            userInput =  Console.ReadLine();
-            n1   =  Int32.Parse(userInput);
-            n2   =  Int32.Parse(Console.ReadLine());
+            userInput = Console.ReadLine();
+            n1 = Int32.Parse(userInput);
+            n2 = Int32.Parse(Console.ReadLine());
 
             //   calculate the sum of   these two numbers
-            sum = n1   +  n2;
+            sum = n1 + n2;
             product = n1 * n2;
             division = sum / product;
             //   print a  message along with the sum of the two numbers
