@@ -18,7 +18,7 @@ namespace Lecture1Lab1
             //   declare two integer variables
             int n1, n2, sum;
             int product;
-            int division;
+            double division;
             string userInput;
             userInput =  Console.ReadLine();
             n1   =  Int32.Parse(userInput);
@@ -31,8 +31,7 @@ namespace Lecture1Lab1
             //   print a  message along with the sum of the two numbers
             Console.WriteLine("The sum of those two numbers is");
             Console.WriteLine(sum);
-            Console.WriteLine("The value of the product is");
-            Console.WriteLine(product);
+            Console.WriteLine("The value ({0,-10})of the product is ", product);
             Console.WriteLine("The value of the divison is ");
             Console.WriteLine(division);
             //Just to   pause the screen.
