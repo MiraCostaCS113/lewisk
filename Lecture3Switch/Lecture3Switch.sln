@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture3Switch", "Lecture3Switch\Lecture3Switch.csproj", "{9E5EC24D-3198-47F3-959E-F23AF19CF089}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E5EC24D-3198-47F3-959E-F23AF19CF089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E5EC24D-3198-47F3-959E-F23AF19CF089}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E5EC24D-3198-47F3-959E-F23AF19CF089}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E5EC24D-3198-47F3-959E-F23AF19CF089}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8AB28FFD-C7F1-4F17-B459-9388847E9D37}
+	EndGlobalSection
+EndGlobal
