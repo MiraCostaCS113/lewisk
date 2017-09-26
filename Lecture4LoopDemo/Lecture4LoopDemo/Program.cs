@@ -17,6 +17,7 @@ namespace Lecture4LoopDemo
             int numF = 0;
             int total = 0;
             int totalGrades = 0;
+            int[] grades = new int[100];
 
             Console.WriteLine("Enter a test score, negative to exit:");
             string strTestScore = Console.ReadLine();
@@ -24,6 +25,7 @@ namespace Lecture4LoopDemo
 
             while (testScore >= 0)
             {
+                grades[totalGrades] = testScore;
                 totalGrades++;
                 total += testScore;
 
@@ -59,7 +61,18 @@ namespace Lecture4LoopDemo
             Console.WriteLine("Number of C's = {0} which is {1:P2}", numC, numC / (double)totalGrades);
             Console.WriteLine("Number of D's = {0} which is {1:P2}", numD, numD / (double)totalGrades);
             Console.WriteLine("Number of F's = {0} which is {1:P2}", numF, numF / (double)totalGrades);
-            Console.WriteLine("The test average was {0}", total / (double)totalGrades);
+            double average = total / (double)totalGrades;
+            Console.WriteLine("The test average was {0}", average);
+
+            double summation = 0;
+            //standard deviation
+            for(int i = 0; i < totalGrades; i++)
+            {
+                summation += Math.Pow(grades[i] - average, 2);
+            }
+
+            Console.WriteLine("Standard Deviation = {0}", Math.Sqrt(summation/totalGrades));
+
 
             Console.ReadLine();
         }

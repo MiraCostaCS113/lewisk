@@ -35,7 +35,7 @@ namespace Lecture5EnumExample
 
             today = (DaysOfWeek)5; // what day is this?
 
-            if (today == DaysOfWeek.Monday)
+            if (today != DaysOfWeek.Monday)
             {
                 Console.WriteLine("CS 155: C# ({0})", today.ToString());
             }
