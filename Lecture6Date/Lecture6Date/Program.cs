@@ -10,6 +10,26 @@ namespace Lecture6Date
     {
         static void Main(string[] args)
         {
+            Date birthday = new Date();
+
+            birthday.setMonth(1);
+            birthday.setDay(12);
+            birthday.setYear(1995);
+
+            Console.WriteLine(birthday.dateString());
+
+            Date midterm = new Date();
+            midterm.setMonth(10);
+            midterm.setDay(9);
+            midterm.setYear(2017);
+
+            Console.WriteLine(midterm.dateString());
+
+            Date final = new Date();
+            final.setDate(12, 11, 2017);
+            Console.WriteLine(final);
+
+            Console.ReadLine();
         }
     }
 }
