@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{971CE34F-D838-437A-9426-464A8604ED38}</ProjectGuid>
+    <ProjectGuid>{42AD789F-6303-409B-A747-6DE5366F9DF1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Lecture6Date</RootNamespace>
-    <AssemblyName>Lecture6Date</AssemblyName>
+    <RootNamespace>Lecture7Counter2</RootNamespace>
+    <AssemblyName>Lecture7Counter2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,8 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Date.cs" />
-    <Compile Include="Person.cs" />
+    <Compile Include="Counter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

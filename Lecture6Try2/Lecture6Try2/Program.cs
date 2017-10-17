@@ -20,12 +20,16 @@ namespace Lecture6Try2
                 try
                 {
                     number = Convert.ToInt32(strNumber);
+                    if (number < 0 || number >100)
+                    {
+                        throw new FormatException();
+                    }
                     isGood = true;
 
                 }
-                catch (FormatException)
+                catch (Exception)
                 {
-                    Console.WriteLine("Bad Input./nEnter number between 1 and 100:");
+                    Console.WriteLine("Bad Input.\nEnter number between 1 and 100:");
                 }
             }
             Console.WriteLine("All's good.");

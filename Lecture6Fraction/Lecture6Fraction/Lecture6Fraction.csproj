@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{971CE34F-D838-437A-9426-464A8604ED38}</ProjectGuid>
+    <ProjectGuid>{170E58A4-F8C3-4F11-99BC-DEE7E9247498}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Lecture6Date</RootNamespace>
-    <AssemblyName>Lecture6Date</AssemblyName>
+    <RootNamespace>Lecture6Fraction</RootNamespace>
+    <AssemblyName>Lecture6Fraction</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,8 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Date.cs" />
-    <Compile Include="Person.cs" />
+    <Compile Include="Fraction.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

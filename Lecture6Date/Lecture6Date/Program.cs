@@ -16,6 +16,8 @@ namespace Lecture6Date
             birthday.setDay(12);
             birthday.setYear(1995);
 
+            Console.WriteLine(birthday.MonthString());
+            
             Console.WriteLine(birthday.dateString());
 
             Date midterm = new Date();

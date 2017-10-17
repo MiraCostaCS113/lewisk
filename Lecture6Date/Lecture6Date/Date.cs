@@ -54,9 +54,24 @@ namespace Lecture6Date
             return String.Format("{0}/{1}/{2}", this.month, day, year);
         }
 
+        public String MonthString()
+        {
+            switch(this.month)
+            {
+                case 1:
+                    return "Jan";
+                case 2:
+                    return "Feb";
+                default:
+                    return "None";
+            }
+        }
+
+
+
         public override string ToString()
         {
-            return String.Format("{0}/{1}/{2}", this.month, day, year); 
+            return String.Format("{0}/{1}/{2}", month, day, year); 
         }
 
     }
