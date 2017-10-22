@@ -11,6 +11,7 @@ namespace Lecture6Fraction
         private int _numerator;
         private int denominator;
 
+
         public Fraction()
         {
             _numerator = 1;
