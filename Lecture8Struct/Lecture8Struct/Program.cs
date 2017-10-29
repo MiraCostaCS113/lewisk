@@ -17,6 +17,7 @@ namespace Lecture8Struct
 
             Console.WriteLine("Seconds {0}", time.Sec);
             Console.ReadLine();
+            
         }
 
         public static void UpdateTime(TimeStruct time)

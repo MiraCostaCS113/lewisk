@@ -41,5 +41,17 @@ namespace Lecture8Properties
         //Auto implemented property
         public string Event { get; set; }
 
+        private String _variable;
+
+        public String MyProperty
+        {
+            get { return _variable; }
+            set { _variable = value; }
+        }
+
+
+
+
+
     }
 }
