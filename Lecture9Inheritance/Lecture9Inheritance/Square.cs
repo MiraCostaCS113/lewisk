@@ -13,6 +13,6 @@ namespace Lecture9Inheritance
             Console.WriteLine("Square constructor.");
         }
 
-
+       
     }
 }
