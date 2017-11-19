@@ -28,7 +28,7 @@ namespace Lecture10Alien
             Alien otherAlien = obj as Alien;
             if (otherAlien != null)
             {
-                return this.damage.CompareTo(otherAlien.damage);
+                return this.GetDamage().CompareTo(otherAlien.GetDamage());
             }
             else
             {

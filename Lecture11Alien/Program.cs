@@ -21,11 +21,15 @@ namespace Lecture10Alien
             ap.AddAlien(a);
             ap.AddAlien(o);
 
+
+            p.ShealthMode = true;
             ap.Print();
 
             ap.SortAliens();
 
             ap.Print();
+
+            Console.WriteLine("Orc GetDamage = {0}", o.GetDamage());
 
 
             Console.ReadKey();

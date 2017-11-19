@@ -32,7 +32,7 @@ namespace Lecture10Alien
 
         public override string ToString()
         {
-            return String.Format("Predator(Alien) object with damage {0}", damage);
+            return String.Format("Predator(Alien) object with damage {0}", GetDamage());
         }
 
     }
