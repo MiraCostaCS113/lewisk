@@ -8,6 +8,9 @@ namespace Lecture12Delegate
 {
     class Program
     {
+
+        public delegate int MathDelegate(int a, int b);
+
         static void Main(string[] args)
         {
             MathDelegate mathOperation = Add;

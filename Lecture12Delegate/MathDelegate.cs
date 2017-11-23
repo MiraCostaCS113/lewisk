@@ -6,5 +6,5 @@ using System.Threading.Tasks;
 
 namespace Lecture12Delegate
 {
-    public delegate int MathDelegate(int a, int b);
+    //public delegate int MathDelegate(int a, int b);
 }
