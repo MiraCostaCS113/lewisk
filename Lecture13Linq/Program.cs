@@ -33,6 +33,7 @@ namespace Lecture13Linq
             {
                 Console.WriteLine(adult);
             }
+            
 
             IEnumerable<Person> seniors = from person in allPeople
                                           where person.Age >= 55
