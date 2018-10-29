@@ -13,23 +13,18 @@ namespace Lecture10Puzzlevania
         {
             List<Duelist> list = new List<Duelist>();
 
-            list.Add(new SmartDuelist("Aaron", 1 / 3.0));
+            list.Add(new Duelist("Aaron", 1 / 3.0));
             list.Add(new Duelist("Charlie", 995/1000.0));
             list.Add(new Duelist("Bob", 1 / 2.0));
 
             //PrintList<Duelist>(list);
-
+            #region Sort
+            ///Find firing order
             list.Sort();
-
             PrintList<Duelist>(list);
+            #endregion
 
-            //Console.WriteLine(FindDuelistToShotAt(list, list[0])); // aaron is shooter
-            //Console.WriteLine(FindDuelistToShotAt(list, list[1])); // bob is shooter
-
-            //Kill charlie and test aaron
-            //list[2].Alive = false;
-            //Console.WriteLine(FindDuelistToShotAt(list, list[0])); // aaron is shooter
-
+            #region Simulation
             for (int i = 0; i < MAX_SIMULATIONS; i++)
             {
                 Duelist winner = RunSimulation(list);
@@ -38,10 +33,15 @@ namespace Lecture10Puzzlevania
             }
 
             PrintList<Duelist>(list);
-
+            #endregion
             Console.ReadLine();
         }
 
+        /// <summary>
+        /// Simple method for printing out lists
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list"></param>
         static void PrintList<T>(List<T> list)
         {
             Console.WriteLine("List Contents:");
@@ -52,6 +52,12 @@ namespace Lecture10Puzzlevania
             Console.WriteLine("End of List.\n");
         }
 
+        /// <summary>
+        /// Find a duelist to shoot at
+        /// </summary>
+        /// <param name="list">All the duelists</param>
+        /// <param name="shooter"> who is shooting</param>
+        /// <returns></returns>
         static Duelist FindDuelistToShotAt(List<Duelist> list, Duelist shooter)
         {
             Duelist target = null;
@@ -72,6 +78,10 @@ namespace Lecture10Puzzlevania
             return target;
         }
 
+        /// <summary>
+        /// Resets the duelist
+        /// </summary>
+        /// <param name="list"></param>
         static void ResetDuelers(List<Duelist> list)
         {
             foreach(var dueler in list)
@@ -80,6 +90,11 @@ namespace Lecture10Puzzlevania
             }
         }
 
+        /// <summary>
+        /// Method for determining if we should keep playing
+        /// </summary>
+        /// <param name="list"></param>
+        /// <returns></returns>
         static bool KeepPlaying(List<Duelist> list)
         {
             int stillAlive = 0;
@@ -93,6 +108,11 @@ namespace Lecture10Puzzlevania
             return stillAlive >= 2;
         }
 
+        /// <summary>
+        /// Find the winner
+        /// </summary>
+        /// <param name="list"></param>
+        /// <returns></returns>
         static Duelist FindWinner(List<Duelist> list)
         {
             foreach(var dueler in list)
@@ -105,6 +125,11 @@ namespace Lecture10Puzzlevania
             return null;//error
         }
 
+        /// <summary>
+        /// Run a simulation
+        /// </summary>
+        /// <param name="list"></param>
+        /// <returns></returns>
         static Duelist RunSimulation(List<Duelist> list)
         {
             while(KeepPlaying(list))
@@ -123,5 +148,16 @@ namespace Lecture10Puzzlevania
             }
             return FindWinner(list);
         }
+
+        #region Test
+        /* Test code
+         *             //Console.WriteLine(FindDuelistToShotAt(list, list[0])); // aaron is shooter
+            //Console.WriteLine(FindDuelistToShotAt(list, list[1])); // bob is shooter
+
+            //Kill charlie and test aaron
+            //list[2].Alive = false;
+            //Console.WriteLine(FindDuelistToShotAt(list, list[0])); // aaron is shooter
+            */
+        #endregion
     }
 }

@@ -99,6 +99,9 @@ namespace Lecture10Puzzlevania
             Alive = true;
         }
 
-        public override string ToString() => String.Format("{0} - {1:P}: Wins = {2}", Name, probability, wins);
+        public override string ToString()
+        {
+            return string.Format("{0} - {1:P}: Wins = {2}", Name, probability, wins);
+        }
     }
 }
