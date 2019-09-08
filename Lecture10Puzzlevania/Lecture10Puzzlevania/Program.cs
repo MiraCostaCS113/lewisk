@@ -98,7 +98,7 @@ namespace Lecture10Puzzlevania
         static bool KeepPlaying(List<Duelist> list)
         {
             int stillAlive = 0;
-            foreach(var dueler in list)
+            foreach(Duelist dueler in list)
             {
                 if(dueler.Alive)
                 {

@@ -11,7 +11,7 @@ namespace Lecture10Alien
         static void Main(string[] args)
         {
             //Create some Aliens
-            Predator p = new Predator(100, 20);
+            Predator p = new Predator(100, 16);
             Alien a = new Alien(100, 5);
             Orc o = new Orc(100, 9);
 
@@ -22,11 +22,11 @@ namespace Lecture10Alien
             ap.AddAlien(o);
 
 
-            p.ShealthMode = true;
+            ap.SortAliens();
             ap.Print();
 
+            p.ShealthMode = true;
             ap.SortAliens();
-
             ap.Print();
 
             Console.WriteLine("Orc GetDamage = {0}", o.GetDamage());

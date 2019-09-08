@@ -11,21 +11,60 @@ namespace Lecture3StringDemo1
         const string ENDING = "ay";
         static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to the Pig Latin Converter.");
+            Console.WriteLine("Please enter your first name:");
+            string firstName = Console.ReadLine();
+            Console.WriteLine("Please enter your last name:");
+            string lastName = Console.ReadLine();
 
-            //Console.WriteLine("{0}{1}{2}{0}{1}", "A", "B", "C");
+            firstName = firstName.ToLower();
+            string firstLetter = firstName.Substring(0, 1);
+            string secondLetter = firstName.Substring(1, 1).ToUpper();
+            string remainderName = firstName.Substring(2);
+            firstName = secondLetter + remainderName + firstLetter + ENDING;
 
+            lastName = lastName.ToLower();
+            string firstLastLetter = lastName.Substring(0, 1);
+            string secondLastLetter = lastName.Substring(1, 1).ToUpper();
+            string remainderLastName = lastName.Substring(2);
+            lastName = secondLastLetter + remainderLastName + firstLastLetter + ENDING;
 
- 
+            Console.WriteLine("Your pig latin name is {0} {1}.", firstName, lastName);
 
-            Console.WriteLine("K in pig latin is {0}", PigLatin("K"));
-
-
-
-            Console.WriteLine("LE in pig latin is {0}", PigLatin("LE"));
-
-            Console.ReadLine();
+            Console.ReadKey();
 
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         static string PigLatin(string name)
         {
